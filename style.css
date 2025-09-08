@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(135deg, #111184 0%, #1e2a48 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', 'Raleway', Arial, sans-serif;
+  color: #e2e6ed;
+  margin: 0;
+}
+
+.form-container,
+#output {
+  background: rgba(30, 45, 89, 0.93);
+  box-shadow: 0 8px 32px 0 rgba(30, 45, 89, 0.37);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+input, button {
+  font-family: inherit;
+  background: #101b3a;
+  color: #e2e6ed;
+  border: 1px solid #6078ea;
+  border-radius: 6px;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  width: 90%;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+input:focus, button:focus {
+  outline: none;
+  border-color: #4f9fea;
+}
+
+button {
+  cursor: pointer;
+  background: #319dff;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1c68b8;
+}
+
+h2, b {
+  font-family: 'Montserrat', 'Raleway', Arial, sans-serif;
+  font-weight: 700;
+  color: #83aedf;
+}
+
+label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 1.08rem;
+  color: #9cbef5;
+}
+
+::selection {
+  background: #3869b8;
+  color: #fff;
+}
