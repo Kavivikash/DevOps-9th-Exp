@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Details</title>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    
+    var name = localStorage.getItem('name');
+    var department = localStorage.getItem('department');
+    var className = localStorage.getItem('class');
+    
+    
+    var now = new Date();
+    var currentDate = now.toLocaleDateString(); 
+    var currentTime = now.toLocaleTimeString(); 
+
+    
+    document.getElementById('output').innerHTML =
+      `This is a simple webpage created by <b>${name}</b> from <b>${department}</b> <b>${className}</b><br>
+       Time of completion: <b>${currentTime}</b><br>
+       Date of completion: <b>${currentDate}</b>`;
+  </script>
+</body>
+</html>

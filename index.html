@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Details</title>
+</head>
+<body>
+  <h2>Please enter your details</h2>
+  <form id="detailsForm">
+    <label>Name: <input type="text" id="name" required></label><br><br>
+    <label>Department: <input type="text" id="department" required></label><br><br>
+    <label>Class: <input type="text" id="class" required></label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('detailsForm').onsubmit = function(event) {
+      event.preventDefault();
+      localStorage.setItem('name', document.getElementById('name').value);
+      localStorage.setItem('department', document.getElementById('department').value);
+      localStorage.setItem('class', document.getElementById('class').value);
+      window.location.href = 'display.html'; 
+    };
+  </script>
+</body>
+</html>
